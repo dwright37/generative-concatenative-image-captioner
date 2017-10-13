@@ -13,7 +13,7 @@ class ReadCOCOUtil:
     def __init__(self, dataDir='./coco'):
         self.dataDir = dataDir
         self.cocoTrain = COCO(dataDir + '/annotations/captions_train2014.json')
-        self.activsDir = './fwd_prop'
+        self.activsDir = '/home/rob/mscoco_forwardprop'
         self.imgIdsTrain = self.cocoTrain.getImgIds()
         np.random.shuffle(self.imgIdsTrain)
         self.nbTrain = len(self.imgIdsTrain)

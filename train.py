@@ -70,5 +70,5 @@ if __name__ == '__main__':
     vocabDummy = COCOVocab(dictionarySize=9715)
     model['embeddingModel'] = EmbeddingModel(vocabDummy.dictionary, 'semanticEmbedding.model')
     # Train model
-    _, model = makeAndTrainRnn(baseline_model, 'baseline')
+    _, model = makeAndTrainRnn(model, 'baseline')
 

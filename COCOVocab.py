@@ -6,7 +6,6 @@ from ReadCOCOUtil import ReadCOCOUtil
 from collections import defaultdict
 from keras.preprocessing import sequence
 from os import path
-import ipdb
 
 from batching.imgIdToBatch import imgIdToBatch
 
@@ -20,11 +19,10 @@ def createDictionary(captions, length):
     for c in captions:
         for w in c.split():
             w = w.decode().lower().replace('.','')
-
             if w in words:
                 words[w] += 1
             else:
-                words[0] = 1
+                words[w] = 1
 
     counts = [(words[w], w) for w in words]
     counts.sort()

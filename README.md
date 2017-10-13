@@ -34,7 +34,7 @@ The following are example captions generated for the given images with different
 
 You can train the main model as follows:
 
-```python
+```bash
 $ python train.py
 ```
 
@@ -42,26 +42,27 @@ This creates a file "model.h5" that can be used to generate captions for new ima
 
 You can run all of our experiments as follows:
 
-```python
+```bash
 $ python runExperiments.py
 ```
 
 ## Captioning images
 You can caption an image using the following:
 
-```python
+```bash
 $ python writeCaptions.py model.h5 <temperature> <path_to_image>
 ```
 
 Where \<temperature\> is the softmax temperature
 
 
-## Web server
-There is a (very light) web server which can be run to pass in and caption an image. To run it, install node.js 
-and execute the following:
+# Web server
+There is a (very light) web server which can be run to pass in and caption an image. To run it, install node.js,
+navigate to the web-server directory, execute the following:
 
 ```bash
-$ node web-server/server.js
+$ npm install busboy
+$ node server.js
 ```
 
 You can then navigate to http://localhost:8080 and use the interface to generate captions for a given image.
