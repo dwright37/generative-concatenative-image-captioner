@@ -9,7 +9,7 @@ Our implementation is modeled after Vinyals\' et al. network presented in [(Viny
 In this model, a ConvNet is used to map images to a real vector, and the RNN is used to generate English language sentences conditioned on this image representation. 
 For this project we did not implement attention, so captions are generated using the image gestalt. A high level view of the architecture is given below. 
 
-![architecture](assets/architecture.png)
+![architecture](assets/architecture.png | width=800)
 
 The activations of the image are presented to the LSTM by concatenating them with the word representation and are parameterized by a set of weights. At each time step the next 
 word presented to the network is the predicted word from the previous time step. Caption generation starts with a special START token and terminates when a special END token is output by the network.
@@ -17,9 +17,9 @@ word presented to the network is the predicted word from the previous time step.
 ## Example Output
 The following are example captions generated for the given images with different softmax temperatures and different models tested.
 
-![tennis](assets/tennis.png)
+![tennis](assets/tennis.png | width=800)
 
-![cat](assets/cat.png)
+![cat](assets/cat.png | width=800)
 
 ## Setup
 - Make sure you are using python3 with all of the usual packages (numpy, matplotlib, scipy, etc)
