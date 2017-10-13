@@ -34,11 +34,12 @@ Where \<temperature\> is the softmax temperature
 
 
 # Web server
-There is a (very light) web server which can be run to pass in and caption an image. To run it, install node.js 
-and execute the following:
+There is a (very light) web server which can be run to pass in and caption an image. To run it, install node.js,
+navigate to the web-server directory, execute the following:
 
 ```bash
-$ node web-server/server.js
+$ npm install busboy
+$ node server.js
 ```
 
 You can then navigate to http://localhost:8080 and use the interface to generate captions for a given image.
