@@ -11,7 +11,7 @@
 
 You can train the main model as follows:
 
-```python
+```bash
 $ python train.py
 ```
 
@@ -19,14 +19,14 @@ This creates a file "model.h5" that can be used to generate captions for new ima
 
 You can run all of our experiments as follows:
 
-```python
+```bash
 $ python runExperiments.py
 ```
 
 #Captioning images
 You can caption an image using the following:
 
-```python
+```bash
 $ python writeCaptions.py model.h5 <temperature> <path_to_image>
 ```
 
