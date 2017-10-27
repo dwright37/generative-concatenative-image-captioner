@@ -1,4 +1,5 @@
 # Generative Concatenative Image Captioner
+[Dustin Wright](https://github.com/dwright37), [Ariel Weingarten](https://github.com/asweingarten), [Dhiman Sengupta](https://github.com/dhimnsen), and [Rob Loughnan](https://github.com/robloughnan)
 
 ## Abstract
 We present an image captioning model using a Generative Concatenative Network (GCN). We accomplished this by taking an existing convolutional network (e.g. VGG16) and feeding it into a word level recurrent neural network (RNN). The network is trained and tested on the Microsoft Common Objects in COntext (MSCOCO) dataset. Image captioning is performed using a generative concatenative method where image representations are presented to the RNN at specific time steps by concatenating the representation with our word encoding. 
